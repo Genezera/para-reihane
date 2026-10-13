@@ -115,6 +115,32 @@ html[data-language=fa] .letter-afterword-message,html[data-language=fa] .seventh
 @media(max-width:700px){.silence-lines{height:15rem}.silence-anchor{grid-template-rows:95px minmax(145px,auto);min-height:240px}.silence-anchor .presence-reveal{font-size:1.45rem;max-width:100%}.presence-continue{font-size:.75rem}.musicbox-keys{gap:.5rem}.musicbox-key{min-height:175px;padding:1.2rem .25rem 1rem;border-radius:45px 45px 4px 4px}.musicbox-word{font-size:1.05rem;min-height:2.5rem;display:grid;place-content:center}.musicbox-light{font-size:1.5rem}.musicbox-feedback{font-size:1.4rem;min-height:135px}.musicbox-footer{justify-content:center;text-align:center}.seventh-discovery{font-size:.8125rem;padding:.85rem;gap:.75rem}.falling-star-button{font-size:.6875rem}.pocket-quote{min-height:260px}.pocket-open{font-size:.8125rem}.seventh-name{font-size:2rem}}
 @media(max-height:600px){.silence-lines{height:auto}.silence-anchor{grid-template-rows:100px auto;min-height:0}.silence-anchor .presence-reveal{min-height:0}}
 .reduce-motion .silence-lines{height:auto}.reduce-motion .silence-anchor{grid-template-rows:100px auto;min-height:0}.reduce-motion .silence-anchor .presence-reveal{min-height:0}
+
+
+/* ===== 14-living.css ===== */
+/* Uma noite viva: luz lenta, papel rosado e gestos que revelam carinho. */
+:root{--rose:#e8afb9;--rose-soft:#c799ae;--haven-paper:#f5e7e1}
+.hero{isolation:isolate}.living-aurora{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden;mix-blend-mode:screen;opacity:.7}
+.living-aurora i{position:absolute;left:-20%;top:12%;width:100%;height:44%;border-radius:50%;background:radial-gradient(ellipse,#b7719740,transparent 65%);filter:blur(35px);transform:rotate(-18deg);animation:aurora-drift 24s ease-in-out infinite alternate;will-change:transform}
+.living-aurora i:nth-child(2){left:20%;top:25%;background:radial-gradient(ellipse,#77a6aa30,transparent 65%);animation-delay:-9s;animation-duration:32s}
+.living-aurora i:nth-child(3){left:25%;top:-12%;background:radial-gradient(ellipse,#eac39225,transparent 65%);animation-delay:-17s;animation-duration:29s}
+@keyframes aurora-drift{from{transform:translate(-2%,-6%) rotate(-18deg) scale(.9)}to{transform:translate(9%,9%) rotate(8deg) scale(1.15)}}
+.hero h1{font-size:clamp(3.4rem,7.5vw,8rem);max-width:1100px;margin-inline:auto;line-height:1.06}.hero h1 em{color:#efc3bd;text-shadow:0 0 60px #ce799623}.hero-subtitle{max-width:40rem;font-size:1.0625rem}.has-entered .hero-copy>*{animation-duration:1.8s}
+.haven-section{isolation:isolate;overflow:hidden;background:linear-gradient(#08090d,#19101c 45%,#100d16);padding-block:8rem 6rem}.haven-halo{position:absolute;inset:-20% -25%;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 75% 35%,#8d496935,transparent 45%);animation:haven-light 18s ease-in-out infinite alternate}
+@keyframes haven-light{from{opacity:.5;transform:translateY(-2%)}to{opacity:1;transform:translateY(3%)}}
+.haven-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(3rem,7vw,7rem);align-items:center}.haven-section .section-title{font-size:clamp(3rem,5.3vw,5.3rem);color:#f4e8e0}.haven-section .overline{color:var(--rose)}.haven-editorial .lead{font-size:.9375rem}.haven-question{margin:2.4rem 0 1rem;font-size:.8125rem;color:var(--soft)}
+.haven-choices{display:flex;flex-direction:column;border-top:1px solid #e8afb926}.haven-choice{display:flex;align-items:center;justify-content:space-between;gap:1.2rem;text-align:start;min-height:58px;padding:.9rem 0;background:none;border:0;border-bottom:1px solid #e8afb926;font-size:.9375rem;color:var(--soft);transition:color .4s,padding .4s}.haven-choice[aria-pressed=true]{color:var(--rose);padding-inline:.8rem}.haven-choice>span:last-child{font-size:1.3rem;transition:transform .5s}.haven-choice:hover>span:last-child{transform:translate(3px,-3px)}
+.haven-letter{position:relative;padding:clamp(2rem,4vw,3.5rem);background:var(--haven-paper);color:#493039;border:1px solid #ffe5dc33;border-radius:3px 3px 50px 3px;box-shadow:0 30px 80px #0005;min-height:500px;transform:rotate(1.5deg)}.haven-letter::before{content:'';position:absolute;inset:14px;border:1px solid #7c45551b;pointer-events:none;border-radius:2px 2px 35px 2px}.haven-letter-mark{display:block;font-family:var(--serif);font-size:3rem;color:#995969;line-height:1;margin-bottom:1.7rem}.haven-message h3{font-size:clamp(2.1rem,3vw,3rem);line-height:1.15;letter-spacing:-.025em;margin-bottom:1.5rem}.haven-message p{font-size:.9375rem;line-height:1.9}.haven-letter-sign{display:block;margin-top:2rem;color:#8b4f5f;font-family:var(--hand);font-size:1.8rem}.haven-letter.is-changing .haven-message{animation:letter-arrival .8s var(--ease) both}@keyframes letter-arrival{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.breath-layout{margin-top:6rem;padding-top:3rem;border-top:1px solid #e8afb923;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}.breath-layout .lead{margin-top:1rem;font-size:.875rem;max-width:28rem}.breath-experience{text-align:center;position:relative}.breath-orbit{position:relative;margin:1.4rem auto 2.5rem;width:155px;height:155px;display:grid;place-items:center;color:var(--rose);font-family:var(--serif);font-size:2.3rem}.breath-orbit i{position:absolute;inset:0;border:1px solid #e8afb963;border-radius:50%;background:radial-gradient(circle,#b571891a,transparent 75%);transform:scale(var(--breath-scale,1));transition:transform .12s linear;box-shadow:0 0 55px #e8afb910}.breath-orbit i:nth-child(2){inset:-20px;border-color:#e8afb920;background:none;transform:scale(calc(1 + (var(--breath-scale,1) - 1)*.6))}.breath-orbit span{position:relative}.breath-phase{font-family:var(--serif);font-size:1.6rem;color:var(--rose);min-height:3rem}.breath-count{font-size:.75rem;color:var(--muted);min-height:1.7rem;margin-bottom:.8rem}.breath-toggle{font-size:.8125rem;min-height:46px}.breath-finish{white-space:pre-line;font-size:.875rem;line-height:1.8;color:var(--soft);margin-top:1.5rem;min-height:4rem}
+.living-interlude{text-align:center;padding:6rem 1rem}.living-interlude-star{display:block;font-size:1.5rem;color:var(--rose);margin-bottom:1.8rem}.living-interlude p{font-family:var(--serif);font-style:italic;color:var(--rose);font-size:clamp(2.3rem,4.8vw,4.4rem);line-height:1.18;text-wrap:balance}.living-interlude-line{display:block;width:1px;height:80px;margin:2.4rem auto 0;background:linear-gradient(var(--rose),transparent)}
+.lantern-section{isolation:isolate;overflow:hidden;text-align:center;background:#0b0c14;padding-block:8rem 6rem}.lantern-horizon{position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 50% 65%,#6b3c6033,transparent 65%),linear-gradient(#08090d,transparent 15%,transparent 90%,#181319);transition:opacity 3s}.lantern-section.is-illuminated .lantern-horizon{background:radial-gradient(ellipse at 50% 65%,#8b536d66,transparent 65%),linear-gradient(#08090d,transparent 15%,transparent 90%,#181319)}.lantern-section .section-heading{max-width:900px;margin-inline:auto}.lantern-section .section-title{font-size:clamp(3rem,6vw,6rem)}.lantern-section .lead{margin-inline:auto;max-width:37rem}.lantern-field{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1.2rem;min-height:250px;margin:4rem 0 2rem}.lantern{position:relative;isolation:isolate;background:none;border:0;min-height:210px;padding:1rem .2rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;transform:translateY(var(--lantern-lift));color:var(--muted)}.lantern-orb{position:relative;display:grid;place-items:center;width:65px;height:85px;border:1px solid #ddbec33d;border-radius:45% 45% 35% 35%;background:linear-gradient(#ddaac309,#ddaac318);font-size:1.8rem;color:#c6a7b290;transition:background 1s,box-shadow 1s,color 1s,border-color 1s;animation:lantern-float 6s var(--lantern-delay) ease-in-out infinite}.lantern-orb::before,.lantern-orb::after{content:'';position:absolute;left:50%;translate:-50% 0;width:29px;height:3px;background:#a882963f;border-radius:2px}.lantern-orb::before{top:-3px}.lantern-orb::after{bottom:-3px}.lantern-label{font-size:.8125rem;line-height:1.6;color:inherit;transition:color 1s}.lantern:hover{color:var(--rose)}.lantern[aria-pressed=true]{color:#f2c6bb}.lantern[aria-pressed=true] .lantern-orb{color:#fff0da;border-color:#eac19ca6;background:radial-gradient(ellipse,#efc59165,#c77e9a25 65%);box-shadow:0 0 35px #e3ac9945,0 0 85px #d38eaf25}.lantern[aria-pressed=true] .lantern-orb span{filter:drop-shadow(0 0 9px #fbd6a4)}@keyframes lantern-float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-13px) rotate(2deg)}}
+.lantern-response{max-width:760px;margin:1rem auto 0;min-height:190px}.lantern-response h3{font-family:var(--serif);font-size:2rem;color:var(--rose);min-height:2.8rem;margin-bottom:.8rem}.lantern-response p{color:var(--soft);font-family:var(--serif);font-size:clamp(1.4rem,2.3vw,1.9rem);line-height:1.55;text-wrap:balance}.lantern-foot{margin-top:1rem;padding-top:2rem;border-top:1px solid var(--line)}.lantern-count{font-size:.75rem;color:var(--muted)}.lantern-complete{min-height:5rem;margin:1.5rem auto 0;font-family:var(--hand);font-size:2rem;color:var(--rose);white-space:pre-line;line-height:1.4}
+.care-beacon{position:fixed;right:max(1.2rem,env(safe-area-inset-right));bottom:calc(1.2rem + env(safe-area-inset-bottom));z-index:55;display:none;align-items:center;gap:.75rem;background:#1d1420ee;backdrop-filter:blur(15px);border:1px solid #e8afb943;border-radius:40px;padding:.65rem 1.15rem;color:#f2ced1;font-size:.75rem;box-shadow:0 8px 40px #0004;min-height:48px}.has-entered .care-beacon{display:flex;animation:letter-arrival 1.8s 1s both}.modal-open .care-beacon{visibility:hidden}.care-beacon-heart{font-family:var(--serif);font-size:1.7rem;line-height:1;animation:care-heart 4.5s ease-in-out infinite}.care-beacon:hover{border-color:var(--rose);background:#302032}@keyframes care-heart{0%,100%{transform:scale(1);opacity:.75}50%{transform:scale(1.12);opacity:1}}
+.care-dialog{isolation:isolate;background:radial-gradient(ellipse at 50% 35%,#382237,#16101c 70%);text-align:center;max-width:700px;width:calc(100% - 2rem);padding:3rem clamp(1.5rem,4vw,3.5rem);border-color:#e8afb936}.care-dialog h2{max-width:100%;font-family:var(--hand);font-size:2rem;color:var(--rose);letter-spacing:0}.care-glow{font-family:var(--serif);font-size:3.6rem;line-height:1.4;color:var(--rose);margin:1rem 0;text-shadow:0 0 45px #f5b7cb45}.care-message{display:grid;place-content:center;min-height:220px;white-space:pre-line;font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.35;color:#f5e9e4}.care-message.is-new{animation:letter-arrival 1s var(--ease) both}.care-next{font-size:.8125rem;margin-top:1rem}.care-footer{font-size:.8125rem;line-height:1.8;margin:2rem auto .8rem;color:var(--soft);max-width:29rem}.care-go{font-size:.75rem;color:var(--rose)}
+html[data-language=fa] .haven-message h3,html[data-language=fa] .lantern-response h3,html[data-language=fa] .care-message,html[data-language=fa] .breath-phase{font-family:var(--fa);letter-spacing:0;line-height:1.9;font-size:1.5rem}html[data-language=fa] .living-interlude p,html[data-language=fa] .lantern-complete,html[data-language=fa] .haven-letter-sign{font-family:var(--fa);font-style:normal;line-height:1.9;font-size:1.7rem}html[data-language=fa] .haven-message p{font-family:var(--fa);line-height:2}html[data-language=fa] .lantern-response p{font-family:var(--fa);font-size:1.15rem;line-height:2}
+.motion-paused .living-aurora i,.motion-paused .haven-halo,.motion-paused .lantern-orb,.motion-paused .care-beacon-heart{animation-play-state:paused!important}.reduce-motion .living-aurora i,.reduce-motion .haven-halo,.reduce-motion .lantern-orb,.reduce-motion .care-beacon-heart{animation:none!important}.reduce-motion .breath-orbit i,.motion-paused .breath-orbit i{transform:none!important;transition:none}.reduce-motion .haven-letter{transform:none}.reduce-motion .care-message,.reduce-motion .haven-message{animation:none!important}
+@media(max-width:900px){.haven-layout{grid-template-columns:1fr;gap:3rem}.haven-editorial{max-width:680px}.haven-letter{max-width:650px;min-height:390px;width:100%;margin-inline:auto}.lantern-field{gap:.5rem}.lantern-label{font-size:.75rem}}
+@media(max-width:600px){.hero h1{font-size:clamp(3rem,11vw,4.5rem)}.hero-subtitle{font-size:.9375rem}.living-aurora i{filter:blur(22px);animation-duration:30s}.haven-section{padding-block:5.5rem 4rem}.haven-section .section-title{font-size:2.9rem}.haven-layout{gap:2.5rem}.haven-letter{padding:2.3rem 1.9rem;min-height:440px;transform:rotate(.5deg)}.haven-message h3{font-size:2.3rem}.breath-layout{grid-template-columns:1fr;gap:2rem;margin-top:4rem}.breath-experience{padding-top:1rem}.living-interlude{padding-block:4rem}.lantern-section{padding-block:5rem 4rem}.lantern-field{grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem .5rem;margin:2rem 0;min-height:380px}.lantern{min-height:175px;gap:1.2rem;transform:none}.lantern-orb{width:54px;height:70px}.lantern-label{font-size:.75rem}.lantern-response{min-height:220px}.lantern-response h3{font-size:1.8rem}.lantern-response p{font-size:1.5rem}.lantern-complete{font-size:1.7rem;min-height:6rem}.care-beacon{padding:.55rem .9rem;font-size:.6875rem;bottom:calc(.8rem + env(safe-area-inset-bottom));right:.8rem}.care-message{font-size:1.9rem;min-height:230px}.care-dialog{padding-top:2.5rem}.footer{padding-bottom:5rem}}
 </style>
 </head>
 <body>
@@ -567,6 +593,65 @@ window.CINEMA={
 })();
 
 
+/* ===== 35-living-copy.js ===== */
+/* Um lugar de carinho, sem inventar encontros ou prometer disponibilidade constante. */
+(function () {
+  const T = (pt, en, fa) => ({pt, en, fa});
+  Object.assign(window.LOVE_COPY.ui, {
+    hero_line1:T('Se o mundo pesar,','When the world feels heavy,','وقتی دنیا سنگین می‌شود،'),
+    hero_line2:T('tem carinho aqui.','there is love here.','اینجا مهر هست.'),
+    hero_note:T('Reihane, você não precisa estar bem para ser amada.\nDeixei este lugar para te lembrar disso.','Reihane, you do not have to feel okay to be loved.\nI left this place to remind you.','ریحانه، لازم نیست حالت خوب باشد تا دوستت داشته باشند.\nاین جا را گذاشتم تا یادت بماند.'),
+    letters_heading:T('Quando faltar palavra,\nabre um pouco de mim.','When words feel far away,\nopen a little of my heart.','وقتی واژه‌ها کم شدند،\nکمی از دلم را باز کن.'),
+    haven_tag:T('Um lugar para pousar','Somewhere to land','جایی برای آرام گرفتن'),
+    haven_title:T('Você não precisa\ncarregar tudo sozinha.','You do not have to\ncarry everything alone.','لازم نیست همه‌چیز را\nتنهایی به دوش بکشی.'),
+    haven_note:T('Nem sempre vou conseguir responder na mesma hora. Mas você pode me contar o que sente, sem precisar encontrar as palavras perfeitas.','I may not always be able to reply right away. But you can tell me how you feel, without finding the perfect words.','شاید همیشه نتوانم همان لحظه جواب بدهم. اما می‌توانی از احساست بگویی، بدون اینکه دنبال واژه‌های بی‌نقص باشی.'),
+    haven_question:T('Que carinho você quer encontrar agora?','What kind of care would you like right now?','الان چه مهری می‌خواهی پیدا کنی؟'),
+    haven_signature:T('Com carinho, Renan.','With love, Renan.','با مهر، رنان.'),
+    breathe_title:T('Um instante sem pressa.','A moment without rushing.','لحظه‌ای بی‌عجله.'),
+    breathe_note:T('Se quiser, acompanhe a luz por três voltas. Respire no seu ritmo. Pode parar quando quiser.','If you like, follow the light for three rounds. Breathe at your own pace. Stop whenever you want.','اگر دوست داری، سه دور با نور همراه شو. با ریتم خودت نفس بکش. هر وقت خواستی توقف کن.'),
+    breathe_start:T('Ficar aqui um pouco','Stay here a little','کمی اینجا بمان'),
+    breathe_stop:T('Parar por aqui','Stop here','همین‌جا توقف کن'),
+    breathe_in:T('Deixa o ar chegar.','Let the air come in.','بگذار هوا وارد شود.'),
+    breathe_out:T('Solta devagar.','Let it out gently.','آرام بیرون بده.'),
+    breathe_idle:T('A luz pode esperar por você.','The light can wait for you.','نور می‌تواند منتظرت بماند.'),
+    breathe_done:T('Nada precisava ser resolvido neste instante.\nVocê também merece um pouco de cuidado.','Nothing had to be solved in this moment.\nYou deserve a little care, too.','لازم نبود در این لحظه چیزی حل شود.\nتو هم سزاوار کمی مراقبتی.'),
+    lantern_tag:T('O que eu quero que você saiba','What I want you to know','چیزی که می‌خواهم بدانی'),
+    lantern_title:T('Se faltar luz aí,\nacende uma aqui.','If light feels far away,\nlight one here.','اگر آنجا نور کم شد،\nاینجا یکی روشن کن.'),
+    lantern_note:T('Cada luz guarda algo que eu queria te dizer. Não há ordem certa. Só carinho esperando por você.','Each light holds something I wanted to tell you. There is no right order. Just love waiting for you.','هر نور چیزی دارد که می‌خواستم به تو بگویم. ترتیب درستی وجود ندارد. فقط مهری که منتظرت است.'),
+    lantern_progress:T('luzes acesas','lights lit','نور روشن شد'),
+    lantern_complete:T('Era isso que eu queria iluminar:\nmesmo longe, você tem um lugar na minha vida.','This is what I wanted to light up:\neven far away, you have a place in my life.','می‌خواستم این را روشن کنم:\nحتی از دور، تو در زندگی من جایی داری.'),
+    lantern_empty:T('Toque numa luz. Tem uma mensagem dentro.','Touch a light. There is a message inside.','نوری را لمس کن. پیامی درون آن است.'),
+    care_open:T('Um carinho agora','A little love now','کمی مهر همین حالا'),
+    care_title:T('Reihane, lê isto devagar.','Reihane, read this slowly.','ریحانه، این را آرام بخوان.'),
+    care_next:T('Mais um pouco de carinho','A little more love','کمی مهر بیشتر'),
+    care_footer:T('Esta é uma mensagem que deixei para você. Quando quiser conversar, me conta como você está.','This is a message I left for you. Whenever you want to talk, tell me how you are.','این پیامی است که برایت گذاشته‌ام. هر وقت خواستی حرف بزنی، بگو حالت چطور است.'),
+    care_to_haven:T('Ir para o nosso lugar de descanso','Go to our resting place','برو به جای آرامشمان'),
+    living_strip:T('O sinal pode faltar. O seu valor, nunca.','The signal may fail. Your worth never does.','ممکن است سیگنال قطع شود. ارزش تو هرگز.'),
+    dawn_note:T('Se faltar sinal, não falta o que construímos.\nSe faltar palavra, a gente pode começar por um oi.\nVocê não precisa atravessar os dias difíceis sem me contar.','If the signal fails, what we have built remains.\nIf words fail, we can begin with a hello.\nYou do not have to go through the hard days without telling me.','اگر سیگنال قطع شود، آنچه ساخته‌ایم می‌ماند.\nاگر واژه‌ای نماند، می‌توانیم با یک سلام شروع کنیم.\nلازم نیست روزهای سخت را بدون گفتن به من بگذرانی.'),
+  });
+  window.CINEMA.haven = [
+    {label:T('O dia está pesado','The day feels heavy','روز سختی است'), title:T('Você pode descansar.','You can rest.','می‌توانی استراحت کنی.'), text:T('Você não precisa dar conta de tudo para merecer amor. Pode me contar só um pedaço do que está sentindo. Pode também ficar em silêncio por um pouco. O seu cansaço não diminui o carinho que eu tenho por você.','You do not have to manage everything to deserve love. You can tell me just a little of what you feel. You can also be quiet for a while. Being tired does not make my love for you smaller.','لازم نیست از پس همه‌چیز بربیایی تا سزاوار عشق باشی. می‌توانی فقط کمی از احساست بگویی. می‌توانی مدتی هم ساکت بمانی. خستگی‌ات از مهر من به تو کم نمی‌کند.')},
+    {label:T('Estou com saudade','I miss you','دلتنگم'), title:T('Ainda vem o nosso primeiro abraço.','Our first hug is still ahead.','اولین آغوشمان هنوز در پیش است.'), text:T('Ainda não sei como vai ser olhar para você sem uma tela entre nós. Mas quero descobrir. Até esse dia, eu quero saber dos seus dias, das suas ideias, do que te faz sorrir. A nossa história já começou, mesmo antes do primeiro encontro.','I do not yet know what it will be like to look at you without a screen between us. But I want to find out. Until that day, I want to hear about your days, your ideas, what makes you smile. Our story has already begun, even before our first meeting.','هنوز نمی‌دانم نگاه کردن به تو بدون صفحه‌ای میانمان چه حسی دارد. اما می‌خواهم بفهمم. تا آن روز، می‌خواهم از روزهایت، فکرهایت و چیزهایی که لبخندت می‌آورند بشنوم. داستانمان حتی پیش از اولین دیدار شروع شده است.')},
+    {label:T('Só quero carinho','I just want some love','فقط مهر می‌خواهم'), title:T('Você não precisa explicar tudo.','You do not have to explain everything.','لازم نیست همه‌چیز را توضیح بدهی.'), text:T('Não precisa ter uma notícia boa, uma resposta pronta ou um sorriso para me mostrar. Eu gosto de você também nos dias comuns. Nos dias confusos. Nos dias em que você só consegue dizer “hoje foi difícil”. Você importa para mim, Reihane.','You do not need good news, a ready answer or a smile to show me. I love you on ordinary days, too. On confusing days. On days when all you can say is “today was hard”. You matter to me, Reihane.','لازم نیست خبر خوب، جواب آماده یا لبخندی برای نشان دادن داشته باشی. روزهای معمولی هم دوستت دارم. روزهای گیج‌کننده. روزهایی که فقط می‌توانی بگویی «امروز سخت بود». تو برایم مهمی، ریحانه.')},
+  ];
+  window.CINEMA.lanterns = [
+    {label:T('Você importa','You matter','تو مهمی'),text:T('Você não é um detalhe nos meus dias. É alguém que eu quero ouvir, conhecer e cuidar.','You are not a small detail in my days. You are someone I want to listen to, know and care for.','تو جزئی کوچک در روزهای من نیستی. کسی هستی که می‌خواهم حرفش را بشنوم، بشناسم و از او مراقبت کنم.')},
+    {label:T('Sem cobrança','No pressure','بدون فشار'),text:T('Não transforme seu cansaço em culpa. Você pode descansar e responder quando conseguir.','Do not turn being tired into guilt. You can rest and reply when you are able.','خستگی‌ات را به احساس گناه تبدیل نکن. می‌توانی استراحت کنی و وقتی توانستی جواب بدهی.')},
+    {label:T('Pode me contar','You can tell me','می‌توانی بگویی'),text:T('Você não precisa organizar a tristeza numa frase bonita. Um “não estou bem” já pode ser o começo da conversa.','You do not have to turn sadness into a beautiful sentence. “I am not okay” can be the beginning of a conversation.','لازم نیست غمت را در جمله‌ای زیبا جا بدهی. «حالم خوب نیست» می‌تواند شروع گفتگو باشد.')},
+    {label:T('A confiança ficou','Trust stayed','اعتماد ماند'),text:T('Quando a internet faltou, a gente descobriu que a confiança não precisava de uma notificação para existir. Eu guardo isso.','When the internet went away, we found that trust did not need a notification to exist. I hold on to that.','وقتی اینترنت قطع شد، فهمیدیم اعتماد برای وجود داشتن به اعلان نیاز ندارد. این را در دلم نگه می‌دارم.')},
+    {label:T('O primeiro abraço','The first hug','اولین آغوش'),text:T('Ainda não vivemos o nosso primeiro encontro. Tem tanta coisa bonita que ainda quero descobrir com você.','We have not had our first meeting yet. There is so much beauty I still want to discover with you.','هنوز اولین دیدارمان را تجربه نکرده‌ایم. چیزهای زیبای زیادی هست که می‌خواهم با تو کشف کنم.')},
+    {label:T('Você não está sozinha','You are not alone','تو تنها نیستی'),text:T('Mesmo com a distância, você faz parte da minha vida. Quero que a gente encontre espaço para conversar, cuidar um do outro e pedir carinho quando precisar.','Even with the distance, you are part of my life. I want us to make room to talk, care for each other and ask for love when we need it.','با وجود فاصله، تو بخشی از زندگی منی. می‌خواهم برای گفتگو، مراقبت از هم و درخواست مهر وقتی نیاز داریم، جا باز کنیم.')},
+  ];
+  window.CINEMA.care = [
+    T('Você não precisa estar bem\npara ser amada.','You do not have to feel okay\nto be loved.','لازم نیست حالت خوب باشد\nتا دوستت داشته باشند.'),
+    T('O seu cansaço não te faz menos bonita.\nNão te faz menos importante.\nNão te faz menos você.','Being tired does not make you less beautiful.\nLess important.\nLess yourself.','خستگی تو را کمتر زیبا نمی‌کند.\nکمتر مهم نمی‌کند.\nکمتر خودت نمی‌کند.'),
+    T('Mesmo quando a mensagem não chega,\no que a gente construiu\nnão desaparece com o sinal.','Even when a message cannot reach us,\nwhat we have built\ndoes not disappear with the signal.','حتی وقتی پیام نمی‌رسد،\nآنچه ساخته‌ایم\nبا سیگنال ناپدید نمی‌شود.'),
+    T('Ainda não segurei a sua mão.\nMas já quero cuidar\ndo caminho até ela.','I have not held your hand yet.\nBut I already want to care\nfor the path that leads to it.','هنوز دستت را نگرفته‌ام.\nاما می‌خواهم از راهی\nکه به آن می‌رسد مراقبت کنم.'),
+  ];
+  window.LOVE_COPY.letters.push({id:'companhia',title:T('Sentir que está sozinha','You feel alone','احساس تنهایی کردی'),body:T('Reihane, você não precisa ter tudo resolvido para conversar comigo.\n\nEu quero conhecer você também nos dias em que o mundo pesa. Nos dias em que a resposta é curta, em que faltam palavras, em que você só quer descansar. Você não precisa transformar o que sente em algo fácil de explicar.\n\nNem sempre eu vou conseguir responder naquele instante. Mas o seu lugar na minha vida não depende da velocidade de uma mensagem. Foi isso que a nossa confiança me ensinou quando a internet faltou.\n\nAinda não nos encontramos pessoalmente. Ainda quero viver o nosso primeiro olhar sem uma tela, o nosso primeiro abraço. Enquanto esse dia não chega, quero que exista espaço entre nós para dizer: “hoje eu preciso de carinho”.\n\nVocê importa para mim. Pode começar por isso.','Reihane, you do not need to have everything figured out to talk to me.\n\nI want to know you on the days when the world feels heavy, too. When replies are short, words are missing, or you just want to rest. You do not have to make what you feel easy to explain.\n\nI may not always be able to reply at that moment. But your place in my life does not depend on how quickly a message arrives. That is what our trust taught me when the internet went away.\n\nWe have not met in person yet. I still want our first look without a screen, our first hug. Until that day, I want there to be room between us to say: “today I need some love”.\n\nYou matter to me. We can start there.','ریحانه، لازم نیست همه‌چیز را حل کرده باشی تا با من حرف بزنی.\n\nمی‌خواهم روزهایی هم که دنیا سنگین است تو را بشناسم. وقتی جواب‌ها کوتاه‌اند، واژه‌ها کم‌اند یا فقط می‌خواهی استراحت کنی. لازم نیست احساست را آسان برای توضیح دادن کنی.\n\nشاید همیشه نتوانم همان لحظه جواب بدهم. اما جای تو در زندگی من به سرعت رسیدن پیام بستگی ندارد. وقتی اینترنت قطع شد، اعتمادمان این را به من آموخت.\n\nهنوز همدیگر را حضوری ندیده‌ایم. هنوز اولین نگاه بدون صفحهٔ نمایش و اولین آغوشمان را می‌خواهم. تا آن روز، می‌خواهم بین ما جایی باشد برای گفتن: «امروز به مهر نیاز دارم».\n\nتو برایم مهمی. می‌توانیم از همین شروع کنیم.')});
+})();
+
+
 /* ===== 40-engine.js ===== */
 /* Uma arquitetura nova: estado pequeno, cenas independentes, um único relógio de animação. */
 (function(){
@@ -889,6 +974,102 @@ N.apply();
   N.on('motion',()=>{if(N.reduced||N.paused)N.$$('.sky-streak,.light-wave,.dialog-bloom').forEach(el=>el.remove())});
   N.on('rendered',()=>{syncSeventh();musicKeys();N.apply(musicbox);N.apply(invitation)});
   musicKeys();syncSeventh();N.apply();N.reveal(musicbox);
+})();
+
+
+/* ===== 66-living.js ===== */
+/* Dois capítulos de carinho, animações leves e interações também pelo teclado. */
+(function () {
+  'use strict';
+  const N=window.NIGHT,E=N.escape;
+  const haven=document.createElement('section');
+  haven.id='haven';haven.className='section haven-section';haven.dataset.scene='haven';
+  haven.innerHTML=`<div class="haven-halo" aria-hidden="true"></div><div class="shell haven-layout"><div class="haven-editorial" data-reveal><span class="overline" data-t="haven_tag" data-dir></span><h2 class="section-title" data-t="haven_title" data-dir></h2><p class="lead" data-t="haven_note" data-dir></p><p class="haven-question" data-t="haven_question" data-dir></p><div class="haven-choices" role="group" data-label="haven_question"></div></div><div class="haven-letter" data-reveal><span class="haven-letter-mark" aria-hidden="true">♡</span><div class="haven-message" role="status" aria-live="polite" aria-atomic="true" dir="auto"><h3></h3><p></p></div><span class="haven-letter-sign" data-t="haven_signature" data-dir></span></div></div><div class="shell breath-layout" data-reveal><div><span class="overline" data-t="breathe_title" data-dir></span><p class="lead" data-t="breathe_note" data-dir></p></div><div class="breath-experience"><div class="breath-orbit" aria-hidden="true"><i></i><i></i><span>♡</span></div><p class="breath-phase" role="status" aria-live="polite" data-dir></p><p class="breath-count" aria-live="off"></p><button class="outline-button breath-toggle" aria-pressed="false"></button><p class="breath-finish" role="status" data-dir></p></div></div>`;
+  N.$('#distance').before(haven);
+  N.sections.splice(N.sections.findIndex(([id])=>id==='distance'),0,['haven','haven_tag']);
+  let selected=0;
+  function havenMessage(){
+    const item=window.CINEMA.haven[selected],message=N.$('.haven-message');
+    N.$('h3',message).textContent=N.tr(item.title);N.$('p',message).textContent=N.tr(item.text);
+    N.$$('.haven-choice').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.haven)===selected)));
+  }
+  N.$('.haven-choices').addEventListener('click',event=>{
+    const button=event.target.closest('[data-haven]');if(!button)return;
+    selected=Number(button.dataset.haven);havenMessage();
+    N.$('.haven-letter').classList.remove('is-changing');void haven.offsetWidth;N.$('.haven-letter').classList.add('is-changing');N.audio?.paper();
+  });
+
+  let breathing=false,elapsed=0,lastPhase='',lastRound=-1,completed=false;
+  const breathButton=N.$('.breath-toggle'),breathOrb=N.$('.breath-orbit');
+  function breathPaint(){
+    const phase=!breathing?'breathe_idle':elapsed%6000<3000?'breathe_in':'breathe_out';
+    if(phase!==lastPhase){N.$('.breath-phase').textContent=N.t(phase);lastPhase=phase;}
+    breathButton.textContent=N.t(breathing?'breathe_stop':'breathe_start');breathButton.setAttribute('aria-pressed',String(breathing));
+    lastRound=Math.min(3,Math.floor(elapsed/6000)+1);
+    N.$('.breath-count').textContent=breathing?`${N.num(lastRound)} / ${N.num(3)}`:'';
+    N.$('.breath-finish').textContent=completed?N.t('breathe_done'):'';
+    breathOrb.classList.toggle('is-breathing',breathing);
+  }
+  function stopBreath(done=false){breathing=false;completed=done;breathOrb.style.setProperty('--breath-scale','1');breathPaint();}
+  breathButton.onclick=()=>{
+    if(breathing){stopBreath();return;}
+    breathing=true;completed=false;elapsed=0;lastPhase='';breathPaint();N.audio?.chime(0);
+  };
+  N.animate(dt=>{
+    elapsed+=dt;
+    if(elapsed>=18000){stopBreath(true);N.audio?.chime(3);return;}
+    if(!N.reduced&&!N.paused)breathOrb.style.setProperty('--breath-scale',String(1+.24*(1-Math.cos((elapsed%6000)/6000*Math.PI*2))/2));
+    if(lastPhase!==(elapsed%6000<3000?'breathe_in':'breathe_out')||lastRound!==Math.min(3,Math.floor(elapsed/6000)+1))breathPaint();
+  },()=>breathing&&N.visible.has(haven)&&!N.$('dialog[open]'));
+  N.observe(haven);
+  N.on('scene',scene=>{if(breathing&&scene!=='haven')stopBreath();});
+  N.on('motion',()=>{if(N.paused||N.reduced)breathOrb.style.setProperty('--breath-scale','1');});
+
+  const lanterns=document.createElement('section');
+  lanterns.id='lanterns';lanterns.className='section lantern-section';lanterns.dataset.scene='lanterns';
+  lanterns.innerHTML=`<div class="lantern-horizon" aria-hidden="true"></div><div class="shell"><div class="section-heading" data-reveal><span class="overline" data-t="lantern_tag" data-dir></span><h2 class="section-title" data-t="lantern_title" data-dir></h2><p class="lead" data-t="lantern_note" data-dir></p></div><div class="lantern-field" role="group" data-label="lantern_title"></div><div class="lantern-response" role="status" aria-live="polite" aria-atomic="true" data-dir><h3></h3><p></p></div><div class="lantern-foot"><span class="lantern-count"></span><p class="lantern-complete" role="status" data-dir></p></div></div>`;
+  N.$('#dawn').before(lanterns);N.sections.splice(N.sections.findIndex(([id])=>id==='dawn'),0,['lanterns','lantern_tag']);
+  const lit=new Set();let lastLantern=null;
+  function lanternPaint(){
+    N.$$('[data-lantern]').forEach(button=>button.setAttribute('aria-pressed',String(lit.has(Number(button.dataset.lantern)))));
+    const response=N.$('.lantern-response');
+    N.$('h3',response).textContent=lastLantern===null?'':N.tr(window.CINEMA.lanterns[lastLantern].label);N.$('h3',response).setAttribute('aria-hidden',String(lastLantern===null));
+    N.$('p',response).textContent=lastLantern===null?N.t('lantern_empty'):N.tr(window.CINEMA.lanterns[lastLantern].text);
+    N.$('.lantern-count').textContent=`${N.num(lit.size)} / ${N.num(window.CINEMA.lanterns.length)} ${N.t('lantern_progress')}`;
+    N.$('.lantern-complete').textContent=lit.size===window.CINEMA.lanterns.length?N.t('lantern_complete'):'';
+    lanterns.classList.toggle('is-illuminated',lit.size===window.CINEMA.lanterns.length);
+  }
+  N.$('.lantern-field').addEventListener('click',event=>{
+    const button=event.target.closest('[data-lantern]');if(!button)return;
+    const index=Number(button.dataset.lantern),fresh=!lit.has(index);lastLantern=index;lit.add(index);lanternPaint();
+    N.ripple?.(button);N.audio?.chime(index);
+    if(fresh&&lit.size===window.CINEMA.lanterns.length){const rect=button.getBoundingClientRect();N.burst?.(rect.left+rect.width/2,rect.top,55);N.audio?.bloom();}
+  });
+
+  // O botão permanece no main inerte antes da entrada e sob os diálogos nativos.
+  const care=document.createElement('button');care.className='care-beacon';care.setAttribute('aria-haspopup','dialog');
+  care.innerHTML='<span class="care-beacon-heart" aria-hidden="true">♡</span><span data-t="care_open" data-dir></span>';
+  N.$('#journey').append(care);
+  let careIndex=0;
+  care.onclick=()=>{
+    const dialog=N.dialog(N.t('care_title'),`<div class="care-glow" aria-hidden="true">♡</div><p class="care-message" role="status" aria-live="polite" dir="auto"></p><button class="outline-button care-next">${E(N.t('care_next'))}</button><p class="care-footer" dir="auto">${E(N.t('care_footer'))}</p><button class="text-button care-go">${E(N.t('care_to_haven'))} ↗</button>`,'care-dialog');
+    const paint=()=>{const message=N.$('.care-message',dialog);message.textContent=N.tr(window.CINEMA.care[careIndex]);message.classList.remove('is-new');void message.offsetWidth;message.classList.add('is-new');};
+    N.$('.care-next',dialog).onclick=()=>{careIndex=(careIndex+1)%window.CINEMA.care.length;paint();N.audio?.chime(careIndex);};
+    N.$('.care-go',dialog).onclick=()=>{dialog.close();N.go('haven');};paint();N.audio?.paper();
+  };
+
+  N.$('.hero-landscape').insertAdjacentHTML('afterend','<div class="living-aurora" aria-hidden="true"><i></i><i></i><i></i></div>');
+  const strip=document.createElement('div');strip.className='living-interlude shell';
+  strip.innerHTML='<span class="living-interlude-star" aria-hidden="true">✦</span><p data-t="living_strip" data-dir data-reveal></p><span class="living-interlude-line" aria-hidden="true"></span>';
+  haven.after(strip);
+
+  function render(){
+    N.$('.haven-choices').innerHTML=window.CINEMA.haven.map((item,i)=>`<button class="haven-choice" data-haven="${i}" aria-pressed="${i===selected}"><span dir="auto">${E(N.tr(item.label))}</span><span aria-hidden="true">↗</span></button>`).join('');
+    N.$('.lantern-field').innerHTML=window.CINEMA.lanterns.map((item,i)=>`<button class="lantern" data-lantern="${i}" aria-pressed="${lit.has(i)}" style="--lantern-delay:${i*.7}s;--lantern-lift:${[20,-12,32,0,26,-15][i]}px"><span class="lantern-orb" aria-hidden="true"><span>✧</span></span><span class="lantern-label" dir="auto">${E(N.tr(item.label))}</span></button>`).join('');
+    havenMessage();lanternPaint();lastPhase='';breathPaint();N.apply(haven);N.apply(lanterns);N.apply(care);N.apply(strip);N.reveal();
+  }
+  N.on('rendered',render);render();
+  addEventListener('pagehide',()=>stopBreath());
 })();
 
 
